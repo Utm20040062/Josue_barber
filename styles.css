@@ -1,0 +1,545 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Estilos para la cabecera */
+header {
+    background-color: #000102;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Estilos para la navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+ /* Estilos para el carousel */
+        .carousel {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Controles del carousel */
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2em;
+            cursor: pointer;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .carousel-control-left {
+            left: 10px;
+        }
+
+        .carousel-control-right {
+            right: 10px;
+        }
+/* Estilos para el banner */
+.banner {
+    position: relative;
+    height: 400px; /* Ajusta según el tamaño deseado */
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay semitransparente */
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.banner button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #218838;
+}
+/* Estilos para el formulario de inicio de sesión */
+.login-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form button[type="submit"] {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Estilos para el formulario de registro */
+.register-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.register-form button[type="submit"] {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.register-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilos para la introducción */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    color: #333;
+}
+
+.intro p {
+    color: #666;
+}
+
+/* Estilos para los servicios */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.service i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #666;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer .footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+footer .footer-section h3 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+footer .footer-section p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+footer .footer-section ul li a:hover {
+    color: #fff;
+}
+
+footer .social-icons {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #000000;
+}
+
+footer .footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-section {
+        min-width: 100%;
+        text-align: center;
+    }
+}
+
+/* Estilos para las secciones */
+.testimonials, .contact, .location {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials h2, .contact h2, .location h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin: 20px 0;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #666;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+.location .map {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para los formularios */
+.reservation-form, .reservation-list, .admin-reservation-list, .admin-container, .admin-section, .logout-message {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form h2, .reservation-list h2, .admin-reservation-list h2, .logout-message h2, .admin-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.reservation-form form, .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reservation-form label, .admin-section label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.reservation-form input, .reservation-form select, .admin-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.reservation-form button, .admin-section button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.reservation-form button:hover, .admin-section button:hover {
+    background-color: #218838;
+}
+
+.reservation-list table, .admin-reservation-list table, .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.reservation-list th, .reservation-list td, .admin-reservation-list th, .admin-reservation-list td, .admin-table th, .admin-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.reservation-list th, .admin-reservation-list th, .admin-table th {
+    background-color: #f4f4f4;
+}
+
+.admin-table button {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-table button:hover {
+    background-color: #e0a800;
+}
+
+.logout-message {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logout-message h2 {
+    color: #333;
+    margin-bottom: 20px;
+}

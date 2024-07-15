@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones - Barber Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Barber Shop Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="logout.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Reservaciones</h1>
+            <p>Reserva tu cita en Barber Shop</p>
+        </div>
+    </header>
+    <main>
+        <section class="reservation-form">
+            <h2>Haz tu Reservación</h2>
+            <form id="reservationForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="service">Tipo de Servicio:</label>
+                <select id="service" name="service" required>
+                    <option value="Corte de Pelo">Corte de Pelo</option>
+                    <option value="Afeitado">Afeitado</option>
+                    <option value="Cuidado de Uñas">Cuidado de Uñas</option>
+                </select>
+                
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+        <section class="reservation-list">
+            <h2>Reservaciones Recientes</h2>
+            <table id="reservationTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo Electrónico</th>
+                        <th>Servicio</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las reservaciones se añadirán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre Nosotros</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p>Email: info@ejemplo.com</p>
+                <p>Tel: +123 456 7890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ejemplo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+       
+    <script src="scripts.js"></script>
+</body>
+</html>

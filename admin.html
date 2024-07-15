@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <a href="#" id="logoutLink">Cerrar sesión</a>
+    </header>
+    <div class="admin-container">
+        <div class="admin-section">
+            <h2>Registrar Ventas</h2>
+            <form id="salesForm">
+                <label for="saleDate">Fecha:</label>
+                <input type="date" id="saleDate" required>
+                <label for="saleAmount">Monto:</label>
+                <input type="number" id="saleAmount" required>
+                <label for="saleDescription">Descripción:</label>
+                <input type="text" id="saleDescription" required>
+                <button type="submit">Registrar Venta</button>
+            </form>
+            <h3>Ventas Registradas</h3>
+            <table id="salesTable" class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Monto</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las ventas se agregarán aquí -->
+                </tbody>
+            </table>
+        </div>
+        <div class="admin-section">
+            <h2>Citas Pendientes</h2>
+            <table id="adminReservationTable" class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Servicio</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las reservaciones se agregarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

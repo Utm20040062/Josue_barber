@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Barber Shop Logo">
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="reservations.html">Reservaciones</a></li>
+            </ul>
+        </nav>
+        
+        <div class="banner">
+            <h1>Barber Shop</h1>
+            <p>Calidad y Estilo para el Hombre Moderno</p>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Bienvenidos a Barber Shop</h2>
+            <p>Ofrecemos los mejores servicios de barbería y cuidado de uñas para hombres. Ven y disfruta de una experiencia de calidad.</p>
+        </section>
+        <section class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="service">
+                <i class="fas fa-cut"></i>
+                <h3>Corte de Pelo</h3>
+                <p>Los mejores cortes de pelo adaptados a tu estilo.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-ruler-combined"></i>
+                <h3>Afeitado</h3>
+                <p>Afeitado clásico y moderno con los mejores productos.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-hand-sparkles"></i>
+                <h3>Cuidado de Uñas</h3>
+                <p>Manicura y pedicura profesional para hombres.</p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>Testimonios</h2>
+            <div class="testimonial">
+                <p>"El mejor corte de pelo que he tenido. ¡Altamente recomendado!"</p>
+                <h4>- Juan Pérez</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Excelente servicio de manicura. Muy profesional."</p>
+                <h4>- Carlos García</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Ambiente agradable y barberos talentosos. Volveré seguro."</p>
+                <h4>- Luis Martínez</h4>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <button type="submit" onclick="sendWhatsAppMessage()">Enviar</button>
+            </form>
+        </section>
+        <section class="location">
+            <h2>Ubicación</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK_HERE" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre Nosotros</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p>Email: info@ejemplo.com</p>
+                <p>Tel: +123 456 7890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ejemplo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function sendWhatsAppMessage() {
+            var name = document.getElementById('name').value;
+            var message = document.getElementById('message').value;
+            var phone = '4494923384'; // Número de WhatsApp destinatario
+
+            var url = 'https://wa.me/' + phone + '?text=Hola,%20mi%20nombre%20es%20' + name + '.%20' + message;
+            window.open(url);
+        }
+    </script>
+</body>
+</html>
